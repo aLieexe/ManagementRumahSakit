@@ -19,6 +19,7 @@ public class Global {
     public static ArrayList<JanjiTemu> daftarJanjiTemu = new ArrayList<>();
 
     public static HashMap<String, ArrayList<Pasien>> dokterListPasien = new HashMap<>();
+    public static HashMap<String, ArrayList<Pasien>> perawatListPasien = new HashMap<>();
 
     public static Scanner scanner = new Scanner(System.in);
 
@@ -280,4 +281,6 @@ public class Global {
 
         System.out.println("Pasien Berhasil di tambahkan");
     }
+
+    
 }

@@ -42,6 +42,8 @@ public class Ruangan {
         }
     }
 
+
+    
     public void kosongkanRuangan() {
         isTersedia = true;
         System.out.println("Ruangan nomor " + nomorRuangan + " sekarang kosong");

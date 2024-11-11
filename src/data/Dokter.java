@@ -95,4 +95,14 @@ public class Dokter extends Orang {
         }
 
     }
+
+
+    //TODO: buat switch case, tanyai user mau edit apa, sesuain sama atribut
+    public void editDokter(){
+
+    }
+
+    public void editKeadaanPasien(){
+
+    }
 }

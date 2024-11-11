@@ -75,6 +75,7 @@ public class Pasien extends Orang {
                     getDetail();
                     break;
                 case 2:
+                    //TODO: pindahkan ke lihatDaftarJanjiTemu()
                     for(JanjiTemu jt : Global.daftarJanjiTemu){
                         if(jt.getPasien().getId().equals(getId())){
                             jt.getDetail();
@@ -88,6 +89,17 @@ public class Pasien extends Orang {
                     break;
             }
         }
+    }
+
+
+    public void lihatDaftarJanjiTemu(){
+
+    }
+
+    
+    //TODO: buat switch case, tanyai user mau edit apa, sesuain sama atribut
+    public void editPasien(){
+
     }
 
 

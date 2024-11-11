@@ -12,32 +12,6 @@ public class Resepsionis extends Orang {
         System.out.println("Resepsionis " + getNama() + " menjadwalkan janji temu antara pasien " + pasien.getNama() + " dengan dokter " + dokter.getNama());
     }
 
-    public void displayAssignPasien(){
-        System.out.println("Masukkan Id / Nama Dokter");
-        String identifier = Global.scanner.nextLine();
-
-        Dokter dokter = Global.searchDokter(identifier);
-
-        if(dokter == null){
-            System.out.println("Data Dokter tidak ditemukan, Mohon ulangi operasi lagi");
-            return;
-        }
-
-        System.out.println("Masukkan Id / Nama Pasien");
-        identifier = Global.scanner.nextLine();
-        Pasien pasien = Global.searchPasien(identifier);
-
-
-        if(pasien == null){
-            System.out.println("Data Pasien tidak ditemukan, Mohon ulangi operasi lagi");
-            return;
-        }
-
-        dokter.getDetail();
-        pasien.getDetail();
-
-        Global.assignDokter(dokter, pasien);
-    }
 
     public void displayResepsionis(){
         int choice = 1;
@@ -101,6 +75,38 @@ public class Resepsionis extends Orang {
         }
 
         System.out.println("Tidak ada ruangan yang tersedia, Janji Temu tidak bisa dijadwalkan");
+
+    }
+
+    public void displayAssignPasien(){
+        System.out.println("Masukkan Id / Nama Dokter");
+        String identifier = Global.scanner.nextLine();
+
+        Dokter dokter = Global.searchDokter(identifier);
+
+        if(dokter == null){
+            System.out.println("Data Dokter tidak ditemukan, Mohon ulangi operasi lagi");
+            return;
+        }
+
+        System.out.println("Masukkan Id / Nama Pasien");
+        identifier = Global.scanner.nextLine();
+        Pasien pasien = Global.searchPasien(identifier);
+
+
+        if(pasien == null){
+            System.out.println("Data Pasien tidak ditemukan, Mohon ulangi operasi lagi");
+            return;
+        }
+
+        dokter.getDetail();
+        pasien.getDetail();
+
+        Global.assignDokter(dokter, pasien);
+    }
+
+    //TODO: kayak diatas, tapi buat perawat.
+    public void displayAssignPerawat(){
 
     }
 }

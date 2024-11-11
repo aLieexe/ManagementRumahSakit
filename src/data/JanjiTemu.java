@@ -38,7 +38,6 @@ public class JanjiTemu {
     }
 
     public void getDetail(){
-
         System.out.println("Tanggal: " + new SimpleDateFormat("dd MM yyyy").format(tanggalJanjiTemu));
         System.out.println("Pasien: " + pasien.getNama());
         System.out.println("Dokter: " + dokter.getNama());

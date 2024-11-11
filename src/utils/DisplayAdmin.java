@@ -36,6 +36,7 @@ public class DisplayAdmin {
                     displayAdminRuangan();
                     break;
                 case 6:
+                    displayAdminJanjiTemu();
                     break;
                 case 0:
                     running = false;
@@ -135,8 +136,8 @@ public class DisplayAdmin {
 
             System.out.println("====================================");
             System.out.println("0. Keluar");
-            System.out.println("1. Lihat Pasien");
-            System.out.println("2. Tambah Pasien");
+            System.out.println("1. Lihat Perawat");
+            System.out.println("2. Tambah Perawat");
             System.out.println("====================================");
             choice = Global.scanner.nextInt();
             Global.scanner.nextLine(); 
@@ -162,8 +163,8 @@ public class DisplayAdmin {
 
             System.out.println("====================================");
             System.out.println("0. Keluar");
-            System.out.println("1. Lihat Pasien");
-            System.out.println("2. Tambah Pasien");
+            System.out.println("1. Lihat Ruangan");
+            System.out.println("2. Tambah Ruangan");
             System.out.println("====================================");
             choice = Global.scanner.nextInt();
             Global.scanner.nextLine(); 
@@ -183,7 +184,16 @@ public class DisplayAdmin {
         }
     }
 
-    
+    //TODO: 
+    // Fitur: lihatSeluruh janjiTemu?
+    // tambah janjiTemu 
+    // tambah juga detailnya kayak function dibawah
+    public static void displayAdminJanjiTemu(){
+
+    }
+
+
+    //TODO ?: Mungkin buat disini bisa juga tambahin assign dokter ke pasien? 
     public static void displayAdminDetailDokter(){
         int choice  = 1;
         int index = 0;
@@ -231,13 +241,17 @@ public class DisplayAdmin {
     public static void displayAdminDetailPasien(){
     }
 
+
     public static void displayAdminDetailResepsionis(){
 
     }
 
+    //TODO ?: Mungkin buat disini bisa juga tambahin assign perawat ke pasien? 
+
     public static void displayAdminDetailPerawat(){
     }
 
+    //TODO ?: Mungkin buat disini bisa juga tambahin assign ruangan ke pasien? 
     public static void displayAdminDetailRuangan(){
 
     }
