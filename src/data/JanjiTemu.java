@@ -42,4 +42,15 @@ public class JanjiTemu {
         System.out.println("Pasien: " + pasien.getNama());
         System.out.println("Dokter: " + dokter.getNama());
     }
+
+
+    //TODO: terserah mau gimana, mungkin bisa hapus aja dari arrayList
+    public void batalkanJanjiTemu(){
+
+    }
+
+    //TODO: mungkin bisa dieksekusi dokter sama resepsionis? sama mungkin admin.
+    public void jadwalUlangJanjiTemu(){
+
+    }
 }
