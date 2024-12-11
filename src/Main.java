@@ -1,20 +1,17 @@
+import model.Doctor;
+import model.Nurse;
+import model.Patient;
+import model.Receptionist;
+import test.Init;
 import utils.DisplayAdmin;
 import utils.Global;
 import utils.auth.DoctorAuth;
 import utils.auth.NurseAuth;
 import utils.auth.PatientAuth;
 import utils.auth.ReceptionistAuth;
-
-import test.Init;
-
-import model.Doctor;
-import model.Patient;
-import model.Receptionist;
-import model.Nurse;
-
-import view.PatientView;
 import view.DoctorView;
 import view.NurseView;
+import view.PatientView;
 import view.ReceptionsitView;
 
 
@@ -36,6 +33,7 @@ public class Main {
             System.out.println("3. Resepsionis");
             System.out.println("4. Perawat");
             System.out.println("5. Admin");
+            System.out.println("HAlooooo Alay kun");
             System.out.println("====================================");
             choice = Global.scanner.nextInt();
             Global.scanner.nextLine();
