@@ -13,7 +13,7 @@ public class NurseView{
 
     public static void displayNurseDetails(Nurse n){
         System.out.println("====================================");
-        System.out.println("Profil Dokter:");
+        System.out.println("Profil Perawat:");
         System.out.println(n.getDetail());
         System.out.println("====================================");
     }
