@@ -57,17 +57,17 @@ public class Global {
         try {
             System.out.println("\n=== Tambah Dokter ===");
 
-            System.out.print("name Dokter: ");
+            System.out.print("Nama Dokter: ");
             String name = scanner.nextLine();
     
-            System.out.print("age Dokter: ");
+            System.out.print("Umur Dokter: ");
             int age = scanner.nextInt();
             scanner.nextLine();
     
             System.out.print("Jenis Kelamin Dokter: ");
             String gender = scanner.nextLine();
     
-            System.out.print("address Dokter: ");
+            System.out.print("Alamat Dokter: ");
             String address = scanner.nextLine();
     
             System.out.print("Nomor Kontak Dokter: ");
@@ -98,17 +98,17 @@ public class Global {
     public static void addPatient() {
         try {
             System.out.println("\n=== Tambah Pasien ===");
-            System.out.print("name Pasien: ");
+            System.out.print("Nama Pasien: ");
             String name = scanner.nextLine();
     
-            System.out.print("age Pasien: ");
+            System.out.print("Umur Pasien: ");
             int age = scanner.nextInt();
             scanner.nextLine();
     
             System.out.print("Jenis Kelamin Pasien: ");
             String gender = scanner.nextLine();
     
-            System.out.print("address Pasien: ");
+            System.out.print("Alamat Pasien: ");
             String address = scanner.nextLine();
     
             System.out.print("Nomor Kontak Pasien: ");
@@ -137,17 +137,17 @@ public class Global {
         try {
             System.out.println("\n=== Tambah Perawat ===");
 
-            System.out.print("name Perawat: ");
+            System.out.print("Nama Perawat: ");
             String name = scanner.nextLine();
     
-            System.out.print("age Perawat: ");
+            System.out.print("Umur Perawat: ");
             int age = scanner.nextInt();
             scanner.nextLine();
     
             System.out.print("Jenis Kelamin Perawat: ");
             String gender = scanner.nextLine();
     
-            System.out.print("address Perawat: ");
+            System.out.print("Alamat Perawat: ");
             String address = scanner.nextLine();
     
             System.out.print("Nomor Kontak Perawat: ");
@@ -172,17 +172,17 @@ public class Global {
         try {
             System.out.println("\n=== Tambah Resepsionis ===");
 
-            System.out.print("name Resepsionis: ");
+            System.out.print("Nama Resepsionis: ");
             String name = scanner.nextLine();
     
-            System.out.print("age Resepsionis: ");
+            System.out.print("Umur Resepsionis: ");
             int age = scanner.nextInt();
             scanner.nextLine();
     
             System.out.print("Jenis Kelamin Resepsionis: ");
             String gender = scanner.nextLine();
     
-            System.out.print("address Resepsionis: ");
+            System.out.print("Alamat Resepsionis: ");
             String address = scanner.nextLine();
     
             System.out.print("Nomor Kontak Resepsionis: ");

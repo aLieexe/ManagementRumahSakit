@@ -4,7 +4,7 @@ import utils.Global;
 import model.Receptionist;
 import controller.ReceptionistController;
 
-public class ReceptionsitView{
+public class ReceptionistView{
     public static void receptionistDisplay(Receptionist r){
         int choice = 1;
         while(choice != 0){

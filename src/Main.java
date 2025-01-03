@@ -15,7 +15,7 @@ import view.PatientView;
 import view.DisplayAdmin;
 import view.DoctorView;
 import view.NurseView;
-import view.ReceptionsitView;
+import view.ReceptionistView;
 
 
 
@@ -77,7 +77,7 @@ public class Main {
                         System.out.println("Data Resepsionis tidak ditemukan");
                         break;
                     }
-                    ReceptionsitView.receptionistDisplay(r);
+                    ReceptionistView.receptionistDisplay(r);
                     break;
 
                 case 4: 

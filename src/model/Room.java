@@ -47,4 +47,18 @@ public class Room {
                "Pasien: " + (patient != null ? patient.getName() : "Tidak ada pasien") + "\n";
     }
 
+    /** 
+     * @deprecated This method has been moved to roomController.setForPatient() instead 
+     */
+    @Deprecated
+    public void setForPatient(Patient patient) {
+        if (!isAvailable) {
+            isAvailable = false;
+            System.out.println("Ruangan nomor " + roomNumber + " telah ditetapkan untuk patient " + patient.getName());
+            this.patient = patient;
+        } else {
+            System.out.println("Ruangan nomor " + roomNumber + " tidak tersedia");
+        }
+    }
+
 }

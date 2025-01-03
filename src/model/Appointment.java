@@ -2,6 +2,7 @@ package model;
 
 import java.util.Date;
 import controller.AppointmentController;
+import utils.Global;
 
 public class Appointment {
     private String appointmentId;
@@ -66,5 +67,20 @@ public class Appointment {
             return "Pasien sudah menyetujui Janji Temu ini, namun dokter belum!";
         }
         return "Status persetujuan tidak dapat ditentukan.";
+    }
+
+    /** 
+     * @deprecated Moved to AppointmentController.checkAgreement(), use that method instead
+     */
+    @Deprecated
+    public void checkAgreement(){
+        if(doctorAgreement == true && patientAgreement == true){
+            Global.activeAppointmentList.add(this);
+            Global.pendingAppointmentList.remove(this);
+        }
+        else{
+            Global.activeAppointmentList.remove(this);
+            Global.pendingAppointmentList.add(this);
+        }
     }
 }

@@ -71,6 +71,9 @@ public abstract class Person {
                "Nomor Kontak: " + getContact() + "\n";
     }
 
+    /** 
+     * @deprecated Use and printout getDetail() instead
+     */
     @Deprecated
     public void oldGetDetail() {
         System.out.println("ID: " + getId());
@@ -79,5 +82,5 @@ public abstract class Person {
         System.out.println("Jenis Kelamin: " + getGender());
         System.out.println("Alamat: " + getAddress());
         System.out.println("Nomor Kontak: " + getContact());
-}
+    }
 }
